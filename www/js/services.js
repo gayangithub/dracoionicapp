@@ -14,6 +14,7 @@ angular.module('starter.services', [])
     name: 'Anonymous',
     lastText: 'This is wicked good ice cream.',
     face: 'https://s.yimg.com/wv/images/a9696dca20fc0835ff82d7e0c7fc3a91_96.png',
+    ddestination:'null',  
       
   }];
 
@@ -24,7 +25,7 @@ angular.module('starter.services', [])
     remove: function(chat) {
       chats.splice(chats.indexOf(chat), 1);
     },
-    get: function(chatId) {
+     get: function(chatId) {
       for (var i = 0; i < chats.length; i++) {
         if (chats[i].id === parseInt(chatId)) {
           return chats[i];
